@@ -39,3 +39,23 @@ class Solution:
                 res_str=s[i-l : i+l+2]
 
         return res_str
+
+    def convert(self, s: str, numRows: int) -> str:
+        # 6 Zigzag Conversion
+        # Initialize the result string
+        res = ""
+
+        # Handle edge case
+        if numRows == 1 or numRows >= len(s):
+            return s
+
+        strlist=[""]*numRows
+        pos=0
+        direction=1
+        for c in s:
+            strlist[pos] += c
+            pos += direction
+            if pos==0 or pos==numRows-1:
+                direction = -direction
+        res="".join(strlist)
+        return res
