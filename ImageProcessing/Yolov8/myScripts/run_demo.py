@@ -11,10 +11,15 @@ vis_lableoffsety = -5
 
 # Load the YOLOv8 model
 model = YOLO(yolomodelfile)
-
 # Run batched inference on a list of images
 results = model([testImg])  # return a list of Results objects
-#print(results)
+
+# Export the model to ONNX format
+# model.export(format='onnx')  # creates 'yolov8n.onnx'
+
+# Load the exported ONNX model
+#onnx_model = YOLO(onnxfile)
+#results = onnx_model([testImg])  # return a list of Results objects
 
 image = cv2.imread(testImg)
 

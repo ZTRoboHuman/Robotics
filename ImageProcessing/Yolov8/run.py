@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 import cv2
-from imageProcess import generate_random_color
+from myScripts.imageProcess import generate_random_color
 
 yolomodelfile='yolov8n.pt'
 onnxfile="./runs/detect/train/weights/best.onnx"
