@@ -1,0 +1,25 @@
+{
+    "files": [
+        "camera/camera.py",
+        "camera/camera.pyproject",
+        "camera/camera.ui",
+        "camera/camera_mobile.ui",
+        "camera/imagesettings.py",
+        "camera/imagesettings.ui",
+        "camera/main.py",
+        "camera/metadatadialog.py",
+        "camera/shutter.svg",
+        "camera/ui_camera.py",
+        "camera/ui_camera_mobile.py",
+        "camera/ui_imagesettings.py",
+        "camera/ui_videosettings.py",
+        "camera/ui_videosettings_mobile.py",
+        "camera/videosettings.py",
+        "camera/videosettings.ui",
+        "camera/videosettings_mobile.ui",
+        "dialog.py",
+        "dialog.ui",
+        "notes.txt",
+        "widget.py"
+    ]
+}

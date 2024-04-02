@@ -1,0 +1,11 @@
+Using pyside6 Command Line Tool:
+pyside6-uic input.ui -o output.py
+
+
+Or
+
+from PyQt6.uic import loadUiType
+# Load the .ui file and generate the corresponding Python code
+Ui_MainWindow, QMainWindowBase = loadUiType("yourfile.ui")
+
+# Now you can use the generated Ui_MainWindow class in your code
